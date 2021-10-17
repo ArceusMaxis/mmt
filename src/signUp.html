@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/icons/pageIcon.png"
+      type="image/x-icon"
+    />
+
+    <!--Import CSS-->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!--Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <title>Make My Trip - Sign Up</title>
+  </head>
+
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">User Login</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" />
+              </div>
+              <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+              <small class="form-text text-muted"
+                >Forgot password? <a href="">Click here</a>.</small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top box-shadow"
+    >
+      <a class="navbar-brand" href="../index.html"
+        ><img
+          src="../img/logo.png"
+          alt="Logo Make My Trip"
+          style="height: 40px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Locations
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="indonesia.html">Indonesia</a>
+              <a class="dropdown-item" href="japan.html">Japan</a>
+              <a class="dropdown-item" href="southKorea.html">South Korea</a>
+              <a class="dropdown-item" href="thailand.html">Thailand</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link mx-md-2" href="plans.html"
+              >Plans<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link mx-md-2" href="contact.html"
+              >Contact<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a
+              class="nav-link mx-md-2"
+              href=""
+              data-toggle="modal"
+              data-target="#loginModal"
+              >Login<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="btn btn-primary mx-md-2" href="signUp.html"
+              >Sign Up<span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container">
+      <div class="my-5 text-center">
+        <span class="h6 d-block">PROGRAM YOUR DREAM TRIP</span>
+        <h1 class="display-4 text-primary">SIGN UP</h1>
+      </div>
+      <div class="row">
+        <form class="col-lg-6" action="">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputName">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                placeholder="Full Name"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputCPF">CPF</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputCPF"
+                placeholder="xxx.xxx.xxx-xx"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputEmail">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                placeholder="Seu email"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword"
+                placeholder="Password"
+              />
+            </div>
+            <div class="form-group col-12">
+              <label for="inputAddress">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Street, number, neighborhood, city and state."
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity" />
+            </div>
+            <div class="form-group col-md-3 col-6">
+              <label for="inputCidade">State</label>
+              <select id="inputCidade" class="form-control">
+                <option>Select State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                <option value="Daman and Diu">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3 col-6">
+              <label for="inputZip">PIN Code</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputZip"
+                placeholder="000000"
+              />
+            </div>
+          </div>
+          <div class="bg-light rounded box-shadow p-3 form-group">
+            <h2 class="h6 text-primary">FORM OF PAYMENT</h2>
+            <nav class="nav btn-group mb-3" id="paymentForm" role="tablist">
+              <button
+                type="button"
+                class="btn btn-secondary active btn-sm"
+                id="nav-card-tab"
+                data-toggle="tab"
+                href="#nav-card"
+                role="tab"
+                aria-controls="nav-card"
+                aria-selected="true"
+              >
+                Credit Card
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm"
+                id="nav-bank-slip-tab"
+                data-toggle="tab"
+                href="#nav-bank-slip"
+                role="tab"
+                aria-controls="nav-bank-slip"
+                aria-selected="false"
+              >
+                Bank Slip
+              </button>
+            </nav>
+            <div class="tab-content" id="paymentFormContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-card"
+                role="tabpanel"
+                aria-labelledby="nav-card-tab"
+              >
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCardName">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputCardName"
+                      placeholder="Full Name"
+                    />
+                  </div>
+                  <div class="form-group col-md-3 col-6">
+                    <label for="inputMonth">Month</label>
+                    <select id="inputMonth" class="form-control">
+                      <option></option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3 col-6">
+                    <label for="inputYear">Year</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputYear"
+                      min="2020"
+                      max="2050"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputCardNumber">Card Number</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputCardNumber"
+                      placeholder="5555 5555 5555 5555"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputCode">Security Code</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputCode"
+                      placeholder="XXX"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-bank-slip"
+                role="tabpanel"
+                aria-labelledby="nav-bank-slip-tab"
+              >
+                <p class="lead">
+                  No bank-slip offers for our company right now, please use credit/debit card.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-check mb-3">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              I agree to <a href="">Terms and Conditions</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg">
+            Contract Plan
+          </button>
+        </form>
+
+        <div class="col-lg-5 mx-auto order-first order-lg-1 mb-5">
+          <h2 class="h6 text-primary">CHOOSED PLAN</h2>
+          <div class="bg-light rounded p-5 box-shadow">
+            <h3 class="display-5">Gold</h3>
+            <ul class="list-plan list-unstyled">
+              <li>→ 20 days of travel</li>
+              <li>→ 3 different destinations</li>
+              <li>→ Everything paid by the company</li>
+              <li>→ Tickets for parties and events</li>
+            </ul>
+            <form action="">
+              <div class="form-group">
+                <select class="form-control bg-light" id="formGold">
+                  <option>Select your country</option>
+                  <option>Indonesia</option>
+                  <option>Japan</option>
+                  <option>South Korea</option>
+                  <option>Thailand</option>
+                </select>
+              </div>
+            </form>
+            <div class="row mt-4 align-items-center">
+              <div class="col"><h4>Rs.80000</h4></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light mt-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h6>PAGES</h6>
+            <ul class="list-unstyled">
+              <li><a href="plans.html">Plans</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="signUp.html">Sign Up</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h6>LOCATIONS</h6>
+            <ul class="list-unstyled">
+              <li><a href="indonesia.html">Indonesia</a></li>
+              <li><a href="japan.html">Japan</a></li>
+              <li><a href="southKorea.html">South Korea</a></li>
+              <li><a href="thailand.html">Thailand</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6>CONTACT US</h6>
+            <ul class="list-unstyled text-secondary">
+                <li>amirtha@makemytrip.com</li>
+                <li>+91 99999 99999</li>
+                <li>Monday-Friday - 8am to 6pm</li>
+                <li>Saturday - 9am to 1pm</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h6>FOLLOW US</h6>
+              <ul class="list-unstyled">
+                <li class="mb-1">
+                  <a
+                    class="btn btn-outline-secondary btn-block btn-sm"
+                    style="max-width: 140px"
+                    href="https://facebook.com"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    class="btn btn-outline-secondary btn-block btn-sm"
+                    style="max-width: 140px"
+                    href="https://www.instagram.com/amirthaz/"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    class="btn btn-outline-secondary btn-block btn-sm"
+                    style="max-width: 140px"
+                    href="https://github.com/ArceusMaxis"
+                    >Github</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary text-center py-3">
+        <p class="mb-0">
+          Make My Trip © 2020. Some rights reserved.<br />Made by Amirtha
+          Krishnan @2021
+        </p>
+      </div>
+    </footer>
+
+    <!--Import Bootstrap, Popper and jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

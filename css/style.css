@@ -1,0 +1,44 @@
+:root{
+    --site-primary-color: #05539C;
+    --site-secondary-color: #dceeff;
+}
+
+body{
+    padding-top: 64px;
+}
+
+.box-shadow{
+    box-shadow: 0 2px 4px 0 rgba(15, 87, 153, 0.15),
+                0 4px 8px 0 rgba(15, 87, 153, 0.15);
+}
+
+#homeQuote{
+    background: url("./img/phraseImage.jpg") center center;
+    background-size: cover;
+}
+
+.quest{
+    border-bottom: 1px solid var(--site-secondary-color);
+}
+
+.list-plan li + li{
+    border-top: 1px solid var(--site-secondary-color);
+}
+
+.list-plan li{
+    padding: 0.5rem;
+}
+
+@media (max-width: 767px){
+    #homeQuote .display-4{
+        font-size: 2.5rem;
+    }
+
+    body{
+        padding-top: 0;
+    }
+
+    body .fixed-top{
+        position: relative;
+    }
+}

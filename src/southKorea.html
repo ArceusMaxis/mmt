@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/icons/pageIcon.png"
+      type="image/x-icon"
+    />
+
+    <!--Import CSS-->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!--Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <title>Make My Trip - South Korea</title>
+  </head>
+
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">User Login</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" />
+              </div>
+              <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+              <small class="form-text text-muted"
+                >Forgot password? <a href="">Click here</a>.</small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top box-shadow"
+    >
+      <a class="navbar-brand" href="../index.html"
+        ><img
+          src="../img/logo.png"
+          alt="Logo Make My Trip"
+          style="height: 40px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-primary"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Locations
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="indonesia.html">Indonesia</a>
+              <a class="dropdown-item" href="japan.html">Japan</a>
+              <a class="dropdown-item text-primary" href="southKorea.html"
+                >South Korea</a
+              >
+              <a class="dropdown-item" href="thailand.html">Thailand</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link mx-md-2" href="plans.html"
+              >Plans<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link mx-md-2" href="contact.html"
+              >Contact<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a
+              class="nav-link mx-md-2"
+              href=""
+              data-toggle="modal"
+              data-target="#loginModal"
+              >Login<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="btn btn-outline-primary mx-md-2" href="signUp.html"
+              >Sign Up<span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="southKoreaPhotos" class="container">
+      <div class="text-center my-5">
+        <h5 class="display-5">THE BEST DESTINATION OF YOUR TRIP</h5>
+        <h2 class="display-4 text-primary">Discover South Korea</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md">
+          <img
+            class="img-fluid mb-3"
+            src="../img/SouthKorea/01.jpeg"
+            alt="Photo 1"
+          />
+          <img
+            class="img-fluid mb-3"
+            src="../img/SouthKorea/02.jpeg"
+            alt="Photo 2"
+          />
+          <img
+            class="img-fluid mb-3"
+            src="../img/SouthKorea/03.jpeg"
+            alt="Photo 3"
+          />
+        </div>
+        <div class="col-md">
+          <img
+            class="img-fluid mb-3"
+            src="../img/SouthKorea/04.jpeg"
+            alt="Photo 4"
+          />
+          <img
+            class="img-fluid mb-3"
+            src="../img/SouthKorea/06.jpeg"
+            alt="Photo 5"
+          />
+        </div>
+        <div class="col-md">
+          <img
+            class="img-fluid mb-3"
+            src="../img/SouthKorea/05.jpeg"
+            alt="Photo 6"
+          />
+          <img
+            class="img-fluid mb-3"
+            src="../img/SouthKorea/07.jpeg"
+            alt="Photo 7"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="eventsTable" class="container">
+      <div class="text-center my-5">
+        <h5 class="display-5">DISCOVER WHAT HAPPENS IN THE COUNTRY</h5>
+        <h2 class="display-4 text-primary">Next Events</h2>
+      </div>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Data</th>
+            <th scope="col">Event</th>
+            <th scope="col">Ticket</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-secondary">4/30</td>
+            <td class="text-secondary">Buddha's Birthday</td>
+            <td>
+              <a
+                class="btn btn-outline-secondary btn-block btn-sm"
+                style="max-width: 140px"
+                href=""
+                >Buy Ticket</a
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-secondary">6/6</td>
+            <td class="text-secondary">Memorial Day</td>
+            <td>
+              <a
+                class="btn btn-outline-secondary btn-block btn-sm"
+                style="max-width: 140px"
+                href=""
+                >Buy Ticket</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="text-secondary">8/15</td>
+            <td class="text-secondary">Liberation Day</td>
+            <td>
+              <a
+                class="btn btn-outline-secondary btn-block btn-sm"
+                style="max-width: 140px"
+                href=""
+                >Buy Ticket</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="text-secondary">9/30</td>
+            <td class="text-secondary">Chuseok</td>
+            <td>
+              <a
+                class="btn btn-outline-secondary btn-block btn-sm"
+                style="max-width: 140px"
+                href=""
+                >Buy Ticket</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="text-secondary">10/9</td>
+            <td class="text-secondary">Hangeul Day</td>
+            <td>
+              <a
+                class="btn btn-outline-secondary btn-block btn-sm"
+                style="max-width: 140px"
+                href=""
+                >Buy Ticket</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="bg-dark text-light mt-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h6>PAGES</h6>
+            <ul class="list-unstyled">
+              <li><a href="plans.html">Plans</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="signUp.html">Sign Up</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h6>LOCATIONS</h6>
+            <ul class="list-unstyled">
+              <li><a href="indonesia.html">Indonesia</a></li>
+              <li><a href="japan.html">Japan</a></li>
+              <li><a href="southKorea.html">South Korea</a></li>
+              <li><a href="thailand.html">Thailand</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6>CONTACT US</h6>
+            <ul class="list-unstyled text-secondary">
+                <li>amirtha@makemytrip.com</li>
+                <li>+91 99999 99999</li>
+                <li>Monday-Friday - 8am to 6pm</li>
+                <li>Saturday - 9am to 1pm</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h6>FOLLOW US</h6>
+              <ul class="list-unstyled">
+                <li class="mb-1">
+                  <a
+                    class="btn btn-outline-secondary btn-block btn-sm"
+                    style="max-width: 140px"
+                    href="https://facebook.com"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    class="btn btn-outline-secondary btn-block btn-sm"
+                    style="max-width: 140px"
+                    href="https://www.instagram.com/amirthaz/"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    class="btn btn-outline-secondary btn-block btn-sm"
+                    style="max-width: 140px"
+                    href="https://github.com/ArceusMaxis"
+                    >Github</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary text-center py-3">
+        <p class="mb-0">
+          Make My Trip © 2020. Some rights reserved.<br />Made by Amirtha
+          Krishnan @2021
+        </p>
+      </div>
+    </footer>
+
+    <!--Import Bootstrap, Popper and jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
